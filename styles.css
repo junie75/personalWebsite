@@ -1,0 +1,235 @@
+@font-face {
+  font-family: "WhitePigeon";
+  src: url("./fonts/WhitePigeon-BW6w5.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Untlang";
+  src: url("./fonts/Untlang-1G1rB.ttf") format("truetype");
+}
+@font-face {
+  font-family: "StayWork";
+  src: url("./fonts/StayworkRegular-axrEo.otf") format("opentype");
+}
+@font-face {
+  font-family: "QuiteMagical";
+  src: url("./fonts/QuiteMagicalRegular-8VA2.ttf") format("truetype");
+}
+@font-face {
+  font-family: "almondlatte";
+  src: url("./fonts/Almondlatte-BWgYd.ttf") format("truetype");
+}
+
+:root {
+  --dark-brown: #833013;
+  --light-brown: #a75728;
+  --lighter-brown: #b26b3d;
+  --dark-sage: #747056;
+  --light-green: #565d47;
+  --dark-green: #232b19;
+
+  --mustard: #c08333;
+  --sunset: #ddad8d;
+  --terracotta: #d98461;
+  --rust: #8b4c2c;
+  --light-sage: #a3a182;
+  --olive: #686130;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+html,
+body {
+  /* height: 100vh; */
+
+  background-color: #f5f0e4;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.pageContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+  /* justify-content: space-between; */
+}
+.navbar {
+  width: 90vw;
+  display: flex;
+  justify-content: end;
+  height: 10%;
+  /* margin-right: 20px; */
+  /* border: 1px solid black; */
+}
+
+#nav {
+  /* border: 2px solid blue; */
+  height: 100%;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "whitepigeon", sans-serif;
+  font-size: 20px;
+}
+
+/* #navElement {
+    margin: 
+} */
+
+#navElement:nth-child(1) {
+  color: var(--light-brown);
+}
+#navElement:nth-child(2) {
+  color: var(--light-green);
+}
+#navElement:nth-child(3) {
+  color: var(--sunset);
+}
+
+.contentContainer {
+  /* border: 1px solid black; */
+  position: relative;
+  display: flex;
+  flex: 1;
+  /* width: 100vw; */
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10%;
+  /* margin-top: 20px; */
+}
+.greeting {
+  display: flex;
+  flex-direction: column;
+}
+
+.catcher {
+  font-family: "staywork", sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  color: var(--dark-brown);
+}
+.catcher.center {
+  align-self: center;
+  color: var(--mustard);
+}
+.catcher.center.pink {
+  color: var(--terracotta);
+}
+.under {
+  font-family: "staywork", sans-serif;
+  font-size: 60px;
+  color: var(--olive);
+}
+
+.character {
+  /* background-color: blue; */
+  width: 300px;
+  height: 300px;
+}
+
+.logoFooter {
+  /* height: 5vh; */
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: end;
+  margin: 0 20px 10px 0;
+  gap: 10px;
+  /* border: 1px solid black; */
+}
+
+.logoFooter img {
+  width: 20px;
+  height: 20px;
+}
+
+.aboutBoxes {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark-brown);
+  font-family: "StayWork", sans-serif;
+  font-size: 25px;
+}
+
+.aboutBox {
+  margin: 6px 0;
+  width: 50vw;
+}
+
+.aboutBox h2 {
+  font-family: "whitepigeon", sans-serif;
+}
+
+/* .aboutBox:nth-child(2) {
+  margin-left: 20px;
+} */
+
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 70px 30px 0 30px;
+}
+
+.holder {
+  font-family: "whitepigeon", sans-serif;
+  text-align: center;
+}
+
+.card {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  background-color: var(--light-sage);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px; /* Add margin for spacing between cards */
+  flex-shrink: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100vw;
+  }
+  #nav {
+    width: 100vw;
+    /* justify-content: space-evenly; */
+  }
+  .pageContainer {
+    height: 85vh;
+  }
+  .contentContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catcher {
+    font-size: 65px;
+  }
+  .under {
+    font-size: 45px;
+  }
+}
