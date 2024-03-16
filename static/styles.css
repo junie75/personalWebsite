@@ -261,7 +261,7 @@ body {
   .under {
     font-size: 45px;
   }
-  .aboutHeader {
-    align-self: flex-start;
+  .aboutBox {
+    width: 80vw;
   }
 }
