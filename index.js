@@ -58,3 +58,15 @@ for (var project of projects) {
 
   cardCarousel.appendChild(holder);
 }
+
+var headers = document.querySelectorAll(".aboutBox h2");
+
+headers.forEach((header) => {
+  header.addEventListener("click", function () {
+    // Toggle the visibility of the next sibling element (description)
+    const arrow = this.nextElementSibling;
+    arrow.classList.toggle("open");
+    const description = this.parentElement.nextElementSibling;
+    description.classList.toggle("hide");
+  });
+});
