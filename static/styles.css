@@ -261,4 +261,7 @@ body {
   .under {
     font-size: 45px;
   }
+  .aboutHeader {
+    align-items: flex-start;
+  }
 }
