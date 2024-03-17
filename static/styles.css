@@ -212,6 +212,11 @@ body {
   margin-left: 20px;
 } */
 
+.expand {
+  margin-left: 10px;
+  font-size: 40px;
+}
+
 .cardContainer {
   display: flex;
   flex-direction: row;
