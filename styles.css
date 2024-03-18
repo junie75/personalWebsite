@@ -19,6 +19,12 @@
   src: url("../fonts/Almondlatte-BWgYd.ttf") format("truetype");
 }
 
+.sue-ellen francisco-regular {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --dark-brown: #833013;
   --light-brown: #a75728;
@@ -57,7 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 .pageContainer {
@@ -66,6 +72,13 @@ body {
   flex-direction: column;
   margin-bottom: 180px;
   /* justify-content: space-between; */
+}
+
+a:visited,
+a:active {
+  color: inherit; /* or specify another color if needed */
+  /* Additional styling if needed */
+  text-decoration: none; /* Remove underline or other decorations */
 }
 .navbar {
   width: 90vw;
@@ -164,7 +177,7 @@ body {
 .aboutBoxes {
   display: flex;
   flex-direction: column;
-  font-family: "StayWork", sans-serif;
+  font-family: "Delicious Handrawn", sans-serif;
   font-size: 25px;
 }
 
@@ -175,6 +188,10 @@ body {
 
 .aboutBox h2 {
   font-family: "whitepigeon", sans-serif;
+}
+
+.aboutBox p {
+  font-size: 20px;
 }
 
 .aboutBox:nth-child(1) {
@@ -199,11 +216,11 @@ body {
   align-items: center;
 }
 
-.arrow {
+/* .arrow {
   height: 30px;
   width: 30px;
   stroke: var(--dark-brown);
-}
+} */
 
 .open {
   transform: rotate(90deg);
@@ -213,6 +230,7 @@ body {
 } */
 
 .expand {
+  font-family: "Sue Ellen Francisco", cursive;
   margin-left: 10px;
   font-size: 40px;
 }

@@ -40,7 +40,7 @@ for (var project of projects) {
   card.classList.add("card");
   holder.appendChild(card);
 
-  if (colorIterator > colors.length) {
+  if (colorIterator >= colors.length) {
     colorIterator = 0;
   }
   card.style.backgroundColor = colors[colorIterator];
@@ -64,9 +64,12 @@ var headers = document.querySelectorAll(".aboutBox h2");
 headers.forEach((header) => {
   header.addEventListener("click", function () {
     // Toggle the visibility of the next sibling element (description)
-    const arrow = this.nextElementSibling;
-    arrow.classList.toggle("open");
-    const description = this.parentElement.nextElementSibling;
+    // const arrow = this.nextElementSibling;
+    // arrow.classList.toggle("open");
+    // const description = this.parentElement.nextElementSibling;
+    const description = this.nextElementSibling;
     description.classList.toggle("hide");
+    let expanders = this.querySelector(".expand");
+    expanders.textContent = expanders.textContent === "+" ? "-" : "+";
   });
 });
